@@ -1,0 +1,76 @@
+@font-face {
+    font-family: "Lucida Sans";
+    src: url(fonts/Lucida-Sans.TTF) format('truetype');
+    font-weight: normal;
+}
+@font-face {
+    font-family: "Lucida Sans";
+    src: url(fonts/Lucida-Sans-Italic.TTF) format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+@font-face {
+    font-family: "Lucida Sans";
+    src: url(fonts/Lucida-Sans-Demi.TTF) format('truetype');
+    font-weight: 500;
+}
+@font-face {
+    font-family: "Lucida Sans";
+    src: url(fonts/Lucida-Sans-Demi-Italic.TTF) format('truetype');
+    font-style: italic;
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: 'Lucida Handwriting';
+    src: url(fonts/Lucida-Handwriting.TTF) format('truetype');
+}
+
+@tailwind base;
+@tailwind components;
+
+h1 {
+    @apply text-4xl uppercase text-orange md:text-5xl lg:text-6xl;
+}
+
+h2 {
+    @apply text-3xl text-orange md:text-3xl lg:text-4xl;
+}
+
+h3 {
+    @apply text-lg md:text-2xl lg:text-3xl;
+}
+
+p {
+    @apply text-base md:text-xl;
+}
+
+button {
+    @apply text-base md:font-medium md:text-lg rounded-xl px-2 py-1 md:px-3 md:py-2;
+}
+
+.btn-orange {
+    @apply border-orange text-orange;
+}
+
+/* for dropdown */
+.hide {
+    @apply -top-full ease-in;
+}
+
+.show {
+    @apply top-0 ease-out;
+}
+
+@tailwind utilities;
+
+.featured-bg {
+    background: url(images/featured-background.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.about {
+    background: url(images/vegetables-set-left-black-slate-min.jpg);
+    background-size: cover;
+}
